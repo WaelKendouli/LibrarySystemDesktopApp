@@ -8,7 +8,7 @@ namespace LibraryDataAccess
 {
     public class clsConnection
     {
-        public static string ConnectionString = "Server=.;Database=Library_DB;Integrated Security=True;";
+        public static string ConnectionString = "Server=.;Database=LibraryDB;Integrated Security=True;";
 
     }
 }
