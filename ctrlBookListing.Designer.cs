@@ -31,6 +31,7 @@
             this.dgvList = new System.Windows.Forms.DataGridView();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.cbSearch = new System.Windows.Forms.ComboBox();
+            this.btnConvert = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,11 +72,25 @@
             this.cbSearch.Size = new System.Drawing.Size(382, 37);
             this.cbSearch.TabIndex = 2;
             // 
+            // btnConvert
+            // 
+            this.btnConvert.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConvert.ForeColor = System.Drawing.Color.White;
+            this.btnConvert.Location = new System.Drawing.Point(1019, 36);
+            this.btnConvert.Name = "btnConvert";
+            this.btnConvert.Size = new System.Drawing.Size(253, 52);
+            this.btnConvert.TabIndex = 3;
+            this.btnConvert.Text = "Convert this table";
+            this.btnConvert.UseVisualStyleBackColor = false;
+            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
+            // 
             // ctrlBookListing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnConvert);
             this.Controls.Add(this.cbSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvList);
@@ -93,5 +108,6 @@
         private System.Windows.Forms.DataGridView dgvList;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.ComboBox cbSearch;
+        private System.Windows.Forms.Button btnConvert;
     }
 }
